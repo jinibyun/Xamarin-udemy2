@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HelloWorld.GridExercise1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Padding="0,20,0,0">
+    <Grid
+        BackgroundColor="Yellow"
+        ColumnSpacing="40"
+        RowSpacing="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <!--  3* means 3 times multiply next row height  -->
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <!--  Auto means its sized is adjusted child control  -->
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            BackgroundColor="Silver"
+            Text="Label 1" />
+        <Label
+            Grid.Row="0"
+            Grid.Column="1"
+            BackgroundColor="Silver"
+            Text="Label 2" />
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="Silver"
+            Text="Label 3" />
+        <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="Silver"
+            Text="Label 4" />
+        <Label
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            BackgroundColor="Silver"
+            Text="ColumnSpan" />
+        <Label
+            Grid.RowSpan="3"
+            Grid.Column="2"
+            BackgroundColor="Silver"
+            Text="RowSpan" />
+    </Grid>
+</ContentPage>
