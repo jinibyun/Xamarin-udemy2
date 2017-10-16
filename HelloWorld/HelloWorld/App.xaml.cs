@@ -37,7 +37,9 @@ namespace HelloWorld
             // MainPage = new List2();
             // MainPage = new List3();
             // MainPage = new List4();
-            MainPage = new List5();
+            // MainPage = new List5();
+
+            MainPage = new ListExcercisePage();
 
         }
 

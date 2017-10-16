@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HelloWorld.Exercise.ListExcercisePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar
+                x:Name="searchBar"
+                Placeholder="Search..."
+                TextChanged="OnSearchTextChanged" />
+            <ListView
+                x:Name="listView"
+                GroupDisplayBinding="{Binding Title}"
+                IsGroupingEnabled="True"
+                IsPullToRefreshEnabled="True"
+                ItemSelected="listView_ItemSelected"
+                Refreshing="listView_Refreshing">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Detail="{Binding Period}" Text="{Binding Location}">
+                            <TextCell.ContextActions>
+                                <MenuItem
+                                    Clicked="MenuItem_Clicked"
+                                    CommandParameter="{Binding .}"
+                                    IsDestructive="True"
+                                    Text="Delete" />
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
