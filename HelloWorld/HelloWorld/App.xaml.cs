@@ -38,9 +38,13 @@ namespace HelloWorld
             // MainPage = new List3();
             // MainPage = new List4();
             // MainPage = new List5();
+            // MainPage = new ListExcercisePage();
 
-            MainPage = new ListExcercisePage();
-
+            MainPage = new NavigationPage(new Navigation_Intro())
+            {
+                BarBackgroundColor = Color.Gray,
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

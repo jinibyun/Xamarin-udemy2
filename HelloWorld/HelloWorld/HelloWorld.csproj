@@ -94,6 +94,12 @@
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Search.cs" />
     <Compile Include="Models\SearchGroup.cs" />
+    <Compile Include="Navigation2.xaml.cs">
+      <DependentUpon>Navigation2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation_Intro.xaml.cs">
+      <DependentUpon>Navigation_Intro.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelativePage.xaml.cs">
       <DependentUpon>RelativePage.xaml</DependentUpon>
@@ -234,6 +240,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Exercise\ListExcercisePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Navigation_Intro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Navigation2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
