@@ -41,6 +41,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactDetailPage.xaml.cs">
+      <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactMasterPage.xaml.cs">
+      <DependentUpon>ContactMasterPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Exercise\AbsoluteLayoutExercise1.xaml.cs">
       <DependentUpon>AbsoluteLayoutExercise1.xaml</DependentUpon>
     </Compile>
@@ -252,6 +258,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Navigation2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactMasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
