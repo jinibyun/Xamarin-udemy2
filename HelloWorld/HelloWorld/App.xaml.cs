@@ -40,12 +40,14 @@ namespace HelloWorld
             // MainPage = new List5();
             // MainPage = new ListExcercisePage();
 
-            MainPage = new NavigationPage(new Navigation_Intro())
-            {
-                BarBackgroundColor = Color.Gray,
-                BarTextColor = Color.White
-            };
+            //MainPage = new NavigationPage(new Navigation_Intro())
+            //{
+            //    BarBackgroundColor = Color.Gray,
+            //    BarTextColor = Color.White
+            //};
             // MainPage = new NavigationPage(new ContactMasterPage());
+            // MainPage = new ContactMasterPage2();
+            MainPage = new Tab1();
         }
 
         protected override void OnStart()

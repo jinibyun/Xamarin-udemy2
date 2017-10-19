@@ -44,8 +44,14 @@
     <Compile Include="ContactDetailPage.xaml.cs">
       <DependentUpon>ContactDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactDetailPage2.xaml.cs">
+      <DependentUpon>ContactDetailPage2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ContactMasterPage.xaml.cs">
       <DependentUpon>ContactMasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactMasterPage2.xaml.cs">
+      <DependentUpon>ContactMasterPage2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Exercise\AbsoluteLayoutExercise1.xaml.cs">
       <DependentUpon>AbsoluteLayoutExercise1.xaml</DependentUpon>
@@ -113,6 +119,9 @@
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tab1.xaml.cs">
+      <DependentUpon>Tab1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -270,6 +279,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ContactDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactMasterPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactDetailPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tab1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
