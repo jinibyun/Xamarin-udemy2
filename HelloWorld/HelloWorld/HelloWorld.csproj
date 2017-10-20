@@ -41,6 +41,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Carousel1.xaml.cs">
+      <DependentUpon>Carousel1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ContactDetailPage.xaml.cs">
       <DependentUpon>ContactDetailPage.xaml</DependentUpon>
     </Compile>
@@ -52,6 +55,9 @@
     </Compile>
     <Compile Include="ContactMasterPage2.xaml.cs">
       <DependentUpon>ContactMasterPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayingPopup.xaml.cs">
+      <DependentUpon>DisplayingPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Exercise\AbsoluteLayoutExercise1.xaml.cs">
       <DependentUpon>AbsoluteLayoutExercise1.xaml</DependentUpon>
@@ -122,6 +128,9 @@
     </Compile>
     <Compile Include="Tab1.xaml.cs">
       <DependentUpon>Tab1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolbarItem1.xaml.cs">
+      <DependentUpon>ToolbarItem1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -297,6 +306,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Tab1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Carousel1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DisplayingPopup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolbarItem1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -47,7 +47,11 @@ namespace HelloWorld
             //};
             // MainPage = new NavigationPage(new ContactMasterPage());
             // MainPage = new ContactMasterPage2();
-            MainPage = new Tab1();
+            // MainPage = new Tab1();
+            // MainPage = new Carousel1();
+            // MainPage = new DisplayingPopup();
+            // note: toolbar items should be wrapped up with Navigationpage as below
+            MainPage = new NavigationPage(new ToolbarItem1());
         }
 
         protected override void OnStart()

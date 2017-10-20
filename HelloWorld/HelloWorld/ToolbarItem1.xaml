@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HelloWorld.ToolbarItem1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Contacts">
+
+    <!--  NOTE: only works in navigation bar  -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Activated="ToolbarItem_Activated"
+            Icon="plus.png"
+            Order="Primary"
+            Text="New" />
+        <ToolbarItem
+            Activated="ToolbarItem_Activated"
+            Icon="plus.png"
+            Order="Secondary"
+            Text="New" />
+    </ContentPage.ToolbarItems>
+</ContentPage>
