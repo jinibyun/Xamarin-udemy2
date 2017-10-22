@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HelloWorld.Form_Switch"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Padding="40">
+    <StackLayout>
+        <Switch x:Name="switch" IsToggled="True" />
+        <Label IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}" Text="Content" />
+    </StackLayout>
+</ContentPage>

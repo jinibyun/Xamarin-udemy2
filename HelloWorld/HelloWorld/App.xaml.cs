@@ -51,7 +51,11 @@ namespace HelloWorld
             // MainPage = new Carousel1();
             // MainPage = new DisplayingPopup();
             // note: toolbar items should be wrapped up with Navigationpage as below
-            MainPage = new NavigationPage(new ToolbarItem1());
+            // MainPage = new NavigationPage(new ToolbarItem1());
+            // MainPage = new NavigationPage(new NavigationExercise());
+
+            // MainPage = new Form_Switch();
+            MainPage = new Form_Slider();
         }
 
         protected override void OnStart()
