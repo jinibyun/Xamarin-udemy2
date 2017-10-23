@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HelloWorld.Form_TableView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HelloWorld.Extensions">
+    <TableView Intent="Form">
+        <TableRoot>
+            <TableSection Title="Basics">
+                <TextCell Detail="Jini Byun" Text="Name" />
+                <EntryCell Label="Title" Placeholder="(eg Shoppping)" />
+                <SwitchCell On="True" Text="Notifications" />
+
+                <!--  ViewCell can be replace with same as below: local:DateCell  -->
+                <ViewCell>
+                    <!--  custom cell  -->
+                    <StackLayout Padding="13,0" Orientation="Horizontal">
+                        <Label Text="Starts" VerticalOptions="Center" />
+                        <DatePicker Date="1 Jan 2017" HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </ViewCell>
+
+                <!--
+                    make it reusable : go to extension folder
+                    DateCell is custom cell
+                -->
+                <local:DateCell Label="Starts" />
+                <local:DateCell Label="End" />
+            </TableSection>
+        </TableRoot>
+
+    </TableView>
+</ContentPage>

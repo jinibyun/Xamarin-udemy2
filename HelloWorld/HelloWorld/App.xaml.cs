@@ -55,7 +55,12 @@ namespace HelloWorld
             // MainPage = new NavigationPage(new NavigationExercise());
 
             // MainPage = new Form_Switch();
-            MainPage = new Form_Slider();
+            // MainPage = new Form_Slider();
+            // MainPage = new Form_Stepper();
+            // MainPage = new Form_Entries();
+            // MainPage = new Form_Picker();
+            // MainPage = new Form_Picker2();
+            MainPage = new Form_TableView();
         }
 
         protected override void OnStart()
