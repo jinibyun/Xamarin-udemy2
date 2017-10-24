@@ -60,7 +60,11 @@ namespace HelloWorld
             // MainPage = new Form_Entries();
             // MainPage = new Form_Picker();
             // MainPage = new Form_Picker2();
-            MainPage = new Form_TableView();
+            // MainPage = new Form_TableView();
+            // MainPage = new NavigationPage(new ContactsPageExercise());
+
+            MainPage = new Data_ApplicationProperty();
+
         }
 
         protected override void OnStart()
