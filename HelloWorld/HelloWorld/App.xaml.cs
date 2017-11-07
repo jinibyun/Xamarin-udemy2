@@ -63,8 +63,12 @@ namespace HelloWorld
             // MainPage = new Form_TableView();
             // MainPage = new NavigationPage(new ContactsPageExercise());
 
-            MainPage = new Data_ApplicationProperty();
+            // NOTE: for data access, test only for web api
+            // MainPage = new Data_ApplicationProperty(); // skip
+            // MainPage = new Data_Sqlite(); // skip
 
+            // MainPage = new Data_RestfulWebService();
+            MainPage = new NavigationPage(new Data_RestfulWebServiceExercise()); // using netflix api. Actually end point for netflex is gone, therefore it would not work
         }
 
         protected override void OnStart()
