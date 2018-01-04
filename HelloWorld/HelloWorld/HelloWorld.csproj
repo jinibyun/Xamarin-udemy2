@@ -167,6 +167,7 @@
     <Compile Include="Models\Contact2.cs" />
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Playlist.cs" />
     <Compile Include="Models\Search.cs" />
     <Compile Include="Models\SearchGroup.cs" />
     <Compile Include="Models\User.cs" />
@@ -192,6 +193,12 @@
     </Compile>
     <Compile Include="ToolbarItem1.xaml.cs">
       <DependentUpon>ToolbarItem1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlaylistDetailPage.xaml.cs">
+      <DependentUpon>PlaylistDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlaylistsPage.xaml.cs">
+      <DependentUpon>PlaylistsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -511,6 +518,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Exercise\MovieDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PlaylistsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PlaylistDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

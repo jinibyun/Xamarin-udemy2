@@ -1,4 +1,5 @@
 ﻿using HelloWorld.Exercise;
+using HelloWorld.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,6 +70,11 @@ namespace HelloWorld
 
             // MainPage = new Data_RestfulWebService();
             // MainPage = new NavigationPage(new Data_RestfulWebServiceExercise()); // using netflix api. Actually end point for netflex is gone, therefore it would not work
+
+            // MVVM Pattern
+            MainPage = new NavigationPage( new PlaylistsPage() );
+
+
         }
 
         protected override void OnStart()
