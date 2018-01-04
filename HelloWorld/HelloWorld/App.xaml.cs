@@ -18,8 +18,8 @@ namespace HelloWorld
             InitializeComponent();
             // For testing each page, uncomment only one at a time
 
-            // MainPage = new HelloWorld.MainPage();
-            // MainPage = new GreetPage();
+            // MainPage = new HelloWorld.();
+            MainPage = new GreetPage();
             // MainPage = new StackPage();
             // MainPage = new AbsolutePage();
             // MainPage = new AbsoluteLayoutExercise1();
@@ -68,7 +68,7 @@ namespace HelloWorld
             // MainPage = new Data_Sqlite(); // skip
 
             // MainPage = new Data_RestfulWebService();
-            MainPage = new NavigationPage(new Data_RestfulWebServiceExercise()); // using netflix api. Actually end point for netflex is gone, therefore it would not work
+            // MainPage = new NavigationPage(new Data_RestfulWebServiceExercise()); // using netflix api. Actually end point for netflex is gone, therefore it would not work
         }
 
         protected override void OnStart()
