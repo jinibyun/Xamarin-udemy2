@@ -6,9 +6,12 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
 
 namespace HelloWorld
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class App : Application
     {
         private const string TitleKey = "Name";
@@ -20,7 +23,7 @@ namespace HelloWorld
             // For testing each page, uncomment only one at a time
 
             // MainPage = new HelloWorld.();
-            MainPage = new GreetPage();
+            // MainPage = new GreetPage();
             // MainPage = new StackPage();
             // MainPage = new AbsolutePage();
             // MainPage = new AbsoluteLayoutExercise1();
